@@ -161,6 +161,11 @@ a {
 
 .hero {
   background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   text-align: center;
   padding-top: 200px;
@@ -299,6 +304,36 @@ a {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-socials-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(175, 177, 184, 1);
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
+.team-socials-link:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.team-socials-item + .team-socials-item {
+  margin-left: 10px;
 }
 
 /* Button */
