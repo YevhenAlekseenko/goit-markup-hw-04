@@ -327,7 +327,8 @@ a {
   fill: currentColor;
 }
 
-.team-socials-link:hover {
+.team-socials-link:hover,
+.team-socials-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
