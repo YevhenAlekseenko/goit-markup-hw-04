@@ -166,6 +166,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
   padding-top: 200px;
@@ -217,6 +221,33 @@ a {
 
 .benefits-item {
   width: 270px;
+}
+
+.benefits-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background-color);
+  margin-bottom: 30px;
+}
+
+.benefits-item.icon-antenna::before {
+  background-image: url('images/icons.svg#icon-antenna');
+}
+
+.icon-clock {
+  background-image: url('../images/icons.svg#icon-clock');
+}
+
+.icon-diagram {
+  background-image: url('../images/icons.svg#icon-diagram');
+}
+
+.icon-astronaut {
+  background-image: url('../images/icons.svg#icon-astronaut');
 }
 
 .benefits-item + .benefits-item {
@@ -444,10 +475,12 @@ a {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .footer-container {
-  display: block;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -462,9 +495,6 @@ a {
   color: #ffffff;
 }
 
-.footer {
-  background-color: #2f303a;
-}
 .footer-text-web {
   color: var(--accent-color);
 }
@@ -489,4 +519,47 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text-join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-sotials {
+  margin-left: 70px;
+}
+
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-socials-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-white-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-socials-link:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.footer-socials-item + .footer-socials-item {
+  margin-left: 10px;
 }
