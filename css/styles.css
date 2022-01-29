@@ -119,8 +119,19 @@ a {
   margin-left: auto;
 }
 
+.heder-nav-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .heder-nav-contacts + .heder-nav-contacts {
   margin-left: 50px;
+}
+
+.heder-contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .heder-nav {
