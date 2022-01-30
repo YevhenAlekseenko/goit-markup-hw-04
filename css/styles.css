@@ -245,17 +245,6 @@ a {
   width: 270px;
 }
 
-/* .benefits-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--secondary-background-color);
-  margin-bottom: 30px;
-} */
-
 .benefits-content {
   display: flex;
   margin-bottom: 30px;
@@ -265,22 +254,6 @@ a {
   background-color: var(--secondary-background-color);
   border-radius: 4px;
 }
-
-/* .benefits-item.icon-antenna::before {
-  background-image: url('images/icons.svg#icon-antenna');
-}
-
-.icon-clock {
-  background-image: url('../images/icons.svg#icon-clock');
-}
-
-.icon-diagram {
-  background-image: url('../images/icons.svg#icon-diagram');
-}
-
-.icon-astronaut {
-  background-image: url('../images/icons.svg#icon-astronaut');
-} */
 
 .benefits-item + .benefits-item {
   margin-left: 30px;
@@ -376,8 +349,9 @@ a {
 }
 
 .team-socials-link {
-  width: 44px;
-  height: 44px;
+  display: flex;
+  width: 100%;
+  height: 100%;
   background-color: var(--primary-white-color);
   border-radius: 50%;
   display: flex;
@@ -394,6 +368,11 @@ a {
 .team-socials-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+}
+
+.team-socials-item {
+  width: 44px;
+  height: 44px;
 }
 
 .team-socials-item + .team-socials-item {
