@@ -98,7 +98,7 @@ a {
 }
 
 .heder-link {
-  display: block;
+  display: flex;
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -127,6 +127,17 @@ a {
 
 .heder-nav-contacts + .heder-nav-contacts {
   margin-left: 50px;
+}
+
+.heder-link-contacts {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+
+.heder-link-contacts:hover,
+.heder-link-contacts:focus {
+  color: var(--accent-color);
 }
 
 .heder-contacts-icon {
@@ -171,16 +182,16 @@ a {
 /* Hero */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
 
   text-align: center;
   padding-top: 200px;
@@ -234,7 +245,7 @@ a {
   width: 270px;
 }
 
-.benefits-item::before {
+/* .benefits-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -243,9 +254,19 @@ a {
   background-position: center;
   background-color: var(--secondary-background-color);
   margin-bottom: 30px;
+} */
+
+.benefits-content {
+  display: flex;
+  margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
 }
 
-.benefits-item.icon-antenna::before {
+/* .benefits-item.icon-antenna::before {
   background-image: url('images/icons.svg#icon-antenna');
 }
 
@@ -259,7 +280,7 @@ a {
 
 .icon-astronaut {
   background-image: url('../images/icons.svg#icon-astronaut');
-}
+} */
 
 .benefits-item + .benefits-item {
   margin-left: 30px;
