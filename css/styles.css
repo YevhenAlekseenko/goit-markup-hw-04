@@ -133,6 +133,8 @@ a {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .heder-link-contacts:hover,
